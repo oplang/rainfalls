@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8F8B22A-BD38-41F6-B344-B4598A8F4124}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rainfalls</RootNamespace>
+    <AssemblyName>rainfalls</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Rainfall.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=12.9.0.0, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.9.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Rainfall.Base.Data">
+      <HintPath>..\..\..\..\Visual Studio 2005\Rainfall2.3.0\Bin\Rainfall.Base.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Abstract.Class, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Abstract.Class.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Abstract.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Abstract.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Base.Class, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Base.Class.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Base.Mtup, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Base.Mtup.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Base.SQLite, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Base.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Base.Struct, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Base.Struct.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Business.CObserver, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Business.CObserver.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Business.DbHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Business.DbHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Business.InspectorLab, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Business.InspectorLab.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Business.RainCalc, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Business.RainCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Business.Site, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Business.Site.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Business.SoundPlay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Business.SoundPlay.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.DataSource.Comm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.DataSource.Comm.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.DataSource.Remote, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.DataSource.Remote.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Model.XmlHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Model.XmlHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.path">
+      <HintPath>..\Debug\rainfalls.path.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.Repair, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\rainfalls.Repair.dll</HintPath>
+    </Reference>
+    <Reference Include="rainfalls.View.frmConfig, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="rainfalls.View.frmRainLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="rainfalls.View.MeasureLog, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="rainfalls.View.ShutDown, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\RainfallSimple\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ZYF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Debug\ZYF.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\rainfalls.View.RainMapCaption\rainfalls.View.RainMapCaption.csproj">
+      <Project>{69E96E99-C4FF-4621-A27D-4738D3726406}</Project>
+      <Name>rainfalls.View.RainMapCaption</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rainfalls.View.RainMapCtrl\rainfalls.View.RainMapCtrl.csproj">
+      <Project>{23C75791-8740-43E4-AB6E-29FB331C89A1}</Project>
+      <Name>rainfalls.View.RainMapCtrl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rainfalls.View.SectionControl\rainfalls.View.SectionControl.csproj">
+      <Project>{25ECEBE1-267F-4DD8-B812-F945F6D2FC02}</Project>
+      <Name>rainfalls.View.SectionControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rainfalls.View.SiteControl\rainfalls.View.SiteControl.csproj">
+      <Project>{A4DBD7F5-A2C1-487A-8C81-CD8BB1B49B6D}</Project>
+      <Name>rainfalls.View.SiteControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rainfalls.View.Toolbar\rainfalls.View.Toolbar.csproj">
+      <Project>{AC35A13F-F805-4EE7-A4D1-00C5D18C8112}</Project>
+      <Name>rainfalls.View.Toolbar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rainfalls.Views.DockFormInspector\rainfalls.Views.DockFormInspector.csproj">
+      <Project>{3C46ECD6-FF10-42C7-BC15-17D157EAC63F}</Project>
+      <Name>rainfalls.Views.DockFormInspector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rainfalls.Views.DockFormRainMap\rainfalls.Views.DockFormRainMap.csproj">
+      <Project>{1536C16F-54CB-49AB-8797-1ABB397EF49D}</Project>
+      <Name>rainfalls.Views.DockFormRainMap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rainfalls.Views.DockFormToolBar\rainfalls.Views.DockFormToolBar.csproj">
+      <Project>{647F0D3A-0E9C-4DED-BDBB-3640AF125D5C}</Project>
+      <Name>rainfalls.Views.DockFormToolBar</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rainfalls.Views.SectionDockForm\rainfalls.Views.SectionDockForm.csproj">
+      <Project>{3E445E34-3C91-4084-8274-7F6D053B5E26}</Project>
+      <Name>rainfalls.Views.SectionDockForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\rainfalls.Views.SiteDockForm\rainfalls.Views.SiteDockForm.csproj">
+      <Project>{D0935FD0-8A3A-4FAC-9469-9D1EE52C840E}</Project>
+      <Name>rainfalls.Views.SiteDockForm</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Rainfall.ico" />
+    <Content Include="更新日志.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
